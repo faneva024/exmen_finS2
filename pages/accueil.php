@@ -33,7 +33,7 @@ $resultat_objets = mysqli_query($bdd, $sql);
 
     <header class="d-flex justify-content-between align-items-center mb-4">
         <h1 class="h3 fw-bold text-primary">Bienvenue, <?php echo $nom_user; ?></h1>
-        <a href="../inc/deconnexion.php" class="btn btn-danger shadow-sm">
+        <a href="../inc/deconnexion.php" class="btn btn-danger shadowno-sm">
             <i class="bi bi-box-arrow-right me-1"></i> Déconnexion
         </a>
     </header>
