@@ -21,5 +21,13 @@
                     </li>
                 </ul>
             </nav>
+            <nav>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="etat_objet.php.php">NombreTotal_des_objets_Emprunter </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+        
     </header>

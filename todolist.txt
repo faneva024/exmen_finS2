@@ -1,4 +1,4 @@
-creer base de donnee partage_objets:(fenosoa)
+creer base de donnee partage_objets:(Fenosoa)
     .creer tableau:
         -tableau membre ok 
         -tableau categorie_objet ok 
@@ -6,7 +6,7 @@ creer base de donnee partage_objets:(fenosoa)
         -images_objet ok 
         -emprunt ok
 
-    .inserer donne:(fenosoa)
+    .inserer donne:(Fenosoa)
         -4 membres ok
         -4 categorie ok
         -10 objet par membre ok
@@ -19,11 +19,35 @@ creation de index.php (Faneva)
     function verifier, connecter ok
     page de formulaire ok
     
-traitementlogin(fenosoa) ok
+traitementlogin(Fenosoa) ok
 traitement inscription (fenosoa)ok
     filtrer les objets ok 
 
 
+version2:
+-mis a jour acceuil.php : Faneva
+
+-fiche_objet(Faneva)
+
+-ajout_objet (fenosoa)
+
+-supprimer_image
+
+-traitement_ajout objet(Faneva)
 
 
+version3:
+(Fenosoa)
+sur les listes d objet:amin ilay accueil
+    -izay OBJETS MBOLA dispo asina soratra oe emprunter---manokatra makany amin ny page hafa :
+    -izay tsy dispo misy soratra oe disponible le....(ilay date anombohan le izy libre)
+    FORMULAIRE_EMPPRUNT
 
+
+(Faneva)
+liste emprunt en cours asiana oe 
+bouton retourner
+etat du chose a rendre OK ou Abimer 
+OK
+Menu ambony 
+=> nbr total objet OK et Abimer

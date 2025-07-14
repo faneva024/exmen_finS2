@@ -114,3 +114,9 @@ INSERT INTO emprunt_emprunt (id_objet, id_membre, date_emprunt, date_retour) VAL
 (33, 2, '2025-07-08', '2025-07-18'),
 (36, 1, '2025-07-09', '2025-07-19'),
 (39, 3, '2025-07-10', '2025-07-20');
+
+
+-- Ajoute ces colonnes à ta table emprunt_emprunt si elles n'existent pas
+ALTER TABLE emprunt_emprunt
+ADD COLUMN etat_retour VARCHAR(50) DEFAULT 'OK', -- 'OK' ou 'Abîmé'
+ADD COLUMN description_dommage TEXT NULL;
