@@ -10,10 +10,32 @@ require("connexion.php");
 
         return $donnees;
     }
-    function inserer_membre( $nom,$date,$genre,$email,$ville,$mdp){
-        $requet="INSERT INTO mmembre(nom, date_de_naissance, genre, email, ville, mdp, image_profil) VALUES ('%s','%s','%s','%s','%s','%s')";
-        $requet=sprintf($requet,$nom,$date,$genre,$email,$ville,$mdp);
+    function inserer_membre($nom, $date, $genre, $email, $ville, $mdp) {
+        
+        $db = dbconnect();
 
-        mysqli_query(dbconnect(),$requet);
+        // Requête préparée pour éviter les injections SQL
+        $requet = "INSERT INTO mmembre (nom, date_de_naissance, genre, email, ville, mdp, image_profil) 
+                   VALUES (?, ?, ?, ?, ?, ?, ?)";
+
+        
+        $stmt = mysqli_prepare($db, $requet);
+
+        // Vérification de la préparation
+        if (!$stmt) {
+            die("Erreur de préparation de la requête : " . mysqli_error($db));
+        }
+
+        // Ajout des paramètres (image_profil est laissé vide par défaut)
+        $image_profil = ''; // Par défaut, aucune image
+        mysqli_stmt_bind_param($stmt, "sssssss", $nom, $date, $genre, $email, $ville, $mdp, $image_profil);
+
+        // Exécution de la requête
+        if (!mysqli_stmt_execute($stmt)) {
+            die("Erreur lors de l'exécution de la requête : " . mysqli_stmt_error($stmt));
+        }
+
+        // Fermeture de la requête
+        mysqli_stmt_close($stmt);
     }
 ?>

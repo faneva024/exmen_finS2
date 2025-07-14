@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription</title>
-    <link rel="stylesheet" href=".././assets/css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Emprunt</h1>
-    </header>
-    <div class="main">
+<?php
+include('../inc/header.php');
+include('../inc/fonction.php');
+include('../inc/connexion.php');
+?>
+<main>
+<div class="main">
         <h3>Creer votre compte des maintenant</h3>
         <form action="traitement.php" method="get">
             <p>Nom: <input type="text" name="nom" id="login" placeholder="Entrez votre nom"></p>
@@ -23,5 +17,8 @@
             <input type="submit" value="valider" id="valider">
         </form>
     </div>
-</body>
-</html>
+</main>
+
+<?php
+include('../inc/header.php');
+?>

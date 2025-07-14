@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href=".././assets/css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Emprunt</h1>
-    </header>
-    <div class="main">
+<?php
+include('../inc/header.php');
+include('../inc/fonction.php');
+include('../inc/connexion.php');
+?>
+<main>
+<div class="main">
         <h3>Veuillez-vous connecter a votre compte</h3>
 
         <form action="traitementlogin.php" method="get">
@@ -23,5 +17,8 @@
         </form>
         <a href="inscription.php" id="retour">Pas encore de compte?</a>
     </div>
-</body>
-</html>
+</main>
+   
+<?php
+include('../inc/footer.php');
+?>

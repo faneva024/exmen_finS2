@@ -1,19 +1,14 @@
 <?php 
     require(".././inc/fonction.php");
 
-    $nom=$_GET['nom'];
-    
-    $date=$_GET['date'];
+    $nom = $_POST['nom'];
+    $date = $_POST['date'];
+    $genre = $_POST['genre'];
+    $email = $_POST['email'];
+    $ville = $_POST['ville'];
+    $mdp = $_POST['password'];
 
-    $genre=$_GET['genre'];
-
-    $email=$_GET['email'];
-
-    $ville=$_GET['ville'];
-    
-    $mdp=$_GET['password'];
-
-    inserer_membre($nom,$date,$genre,$email,$ville,$mdp);
+    inserer_membre($nom, $date, $genre, $email, $ville, $mdp);
 
     header('Location:index.php');
 ?>
