@@ -1,0 +1,8 @@
+-connection.php:
+	-mets la base de donnee dans une variable; ok
+	
+-Inscription.php:
+	-formulaire pour nom,email,mot de passe,date de naissance; ok
+	-bouton valider; ok
+
+-creation base
