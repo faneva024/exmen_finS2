@@ -1,8 +1,29 @@
--connection.php:
-	-mets la base de donnee dans une variable; ok
-	
--Inscription.php:
-	-formulaire pour nom,email,mot de passe,date de naissance; ok
-	-bouton valider; ok
+creer base de donnee partage_objets:(fenosoa)
+    .creer tableau:
+        -tableau membre ok 
+        -tableau categorie_objet ok 
+        -objet ok 
+        -images_objet ok 
+        -emprunt ok
 
--creation base
+    .inserer donne:(fenosoa)
+        -4 membres ok
+        -4 categorie ok
+        -10 objet par membre ok
+        -10 emprunts ok
+
+creer connexion.php(Faneva)
+    connexion a la base(Faneva)ok
+
+creation de index.php (Faneva)
+    function verifier, connecter ok
+    page de formulaire ok
+    
+traitementlogin(fenosoa) ok
+traitement inscription (fenosoa)ok
+    filtrer les objets ok 
+
+
+
+
+

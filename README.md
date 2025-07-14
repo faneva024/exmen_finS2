@@ -1,1 +1,0 @@
-# exmen_finS2
