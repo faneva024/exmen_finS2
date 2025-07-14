@@ -1,13 +1,13 @@
 <?php 
     session_start();
-    require(".././inc/fonctions.php");
+    require(".././inc/fonction.php");
     $email=$_GET['Email'];
     $mdp=$_GET['pass'];
 
     $donnees=get_membre_connecte($email,$mdp);
 
     if(isset($donnees)){
-        $_SESSION['utilisateur']=$donnees;
+        $_SESSION['membre']=$donnees;
         header('Location:accueil.php');
     }
 

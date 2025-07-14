@@ -1,5 +1,5 @@
 <?php 
-    require(".././inc/fonctions.php");
+    require(".././inc/fonction.php");
 
     $nom=$_GET['nom'];
     
@@ -13,7 +13,7 @@
     
     $mdp=$_GET['password'];
 
-    inserer_membre($nom,$date,$email,$mdp);
+    inserer_membre($nom,$date,$genre,$email,$ville,$mdp);
 
     header('Location:index.php');
 ?>

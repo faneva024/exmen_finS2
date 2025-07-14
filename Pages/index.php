@@ -8,10 +8,9 @@
 </head>
 <body>
     <header>
-        <h1>Mini Reseau Sociaux</h1>
+        <h1>Emprunt</h1>
     </header>
     <div class="main">
-        <h2>Bienvenue sur Tsy facebook</h2>
         <h3>Veuillez-vous connecter a votre compte</h3>
 
         <form action="traitementlogin.php" method="get">
