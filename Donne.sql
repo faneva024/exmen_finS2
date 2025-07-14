@@ -1,7 +1,6 @@
-CREATE DATABASE IF NOT EXISTS partage_objets;
-USE partage_objets;
+--CREATE DATABASE partage_objets;
+--USE partage_objets;
 
--- Table des membres
 CREATE TABLE emprunt_membre (
     id_membre INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100),
@@ -13,13 +12,11 @@ CREATE TABLE emprunt_membre (
     image_profil VARCHAR(255)
 );
 
--- Table des catégories d'objet
 CREATE TABLE emprunt_categorie_objet (
     id_categorie INT AUTO_INCREMENT PRIMARY KEY,
     nom_categorie VARCHAR(100)
 );
 
--- Table des objets
 CREATE TABLE emprunt_objet (
     id_objet INT AUTO_INCREMENT PRIMARY KEY,
     nom_objet VARCHAR(100),
@@ -29,7 +26,6 @@ CREATE TABLE emprunt_objet (
     FOREIGN KEY (id_membre) REFERENCES emprunt_membre(id_membre)
 );
 
--- Table des images des objets
 CREATE TABLE emprunt_images_objet (
     id_image INT AUTO_INCREMENT PRIMARY KEY,
     id_objet INT,
@@ -37,7 +33,7 @@ CREATE TABLE emprunt_images_objet (
     FOREIGN KEY (id_objet) REFERENCES emprunt_objet(id_objet)
 );
 
--- Table des emprunts
+
 CREATE TABLE emprunt_emprunt (
     id_emprunt INT AUTO_INCREMENT PRIMARY KEY,
     id_objet INT,
